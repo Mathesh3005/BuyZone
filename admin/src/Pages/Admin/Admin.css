@@ -1,0 +1,10 @@
+.admin {
+    display: flex;
+}
+
+.admin-content {
+    margin-left: 240px;   /* width of sidebar */
+    margin-top: 70px;     /* height of navbar */
+    padding: 20px;
+    width: 100%;
+}

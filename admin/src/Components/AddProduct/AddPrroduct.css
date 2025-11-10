@@ -1,0 +1,151 @@
+/* -----------------------------
+   MAIN FORM CONTAINER
+------------------------------*/
+.add-product {
+    margin-left: 260px;              
+    margin-top: 110px;               
+    padding: 40px 50px;
+    max-width: 880px;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.add-product:hover {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+/* -----------------------------
+   LABEL + INPUT
+------------------------------*/
+.addproduct-itemfield {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.addproduct-itemfield p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Inputs */
+.addproduct-itemfield input,
+.addproduct-itemfield select {
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 1.5px solid #dcdcdc;
+    background: #fafafa;
+    font-size: 15px;
+    transition: 0.25s ease;
+    outline: none;
+}
+
+.addproduct-itemfield input:focus,
+.addproduct-itemfield select:focus {
+    border-color: #6558f5;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(101, 88, 245, 0.35);
+}
+
+/* -----------------------------
+   PRICE TWO-COLUMN GRID
+------------------------------*/
+.addproduct-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* -----------------------------
+   UPLOAD BOX
+------------------------------*/
+.addproduct-thumbnail-img {
+    width: 150px;
+    height: 150px;
+    border: 2.5px dashed #c4c4c4;
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    object-fit: contain;
+    background: #f7f7f7;
+    transition: 0.3s ease;
+}
+
+.addproduct-thumbnail-img:hover {
+    background: #eef0ff;
+    border-color: #6558f5;
+    transform: scale(1.05);
+}
+
+/* -----------------------------
+   ADD BUTTON (Modern Gradient)
+------------------------------*/
+.addproduct-button {
+    margin-top: 20px;
+    width: 180px;
+    padding: 14px 0;
+    background: linear-gradient(135deg, #6558f5 0%, #4c41d8 100%);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 15px rgba(101, 88, 245, 0.35);
+}
+
+.addproduct-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 22px rgba(101, 88, 245, 0.45);
+}
+
+/* -----------------------------
+   RESPONSIVE TABLET
+------------------------------*/
+@media (max-width: 992px) {
+    .add-product {
+        margin-left: 220px;
+        padding: 30px 30px;
+    }
+}
+
+/* -----------------------------
+   RESPONSIVE MOBILE
+------------------------------*/
+@media (max-width: 768px) {
+    .add-product {
+        margin-left: 0;
+        margin-top: 95px;
+        padding: 25px;
+    }
+
+    .addproduct-price {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .addproduct-button {
+        width: 100%;
+    }
+}
+
+/* -----------------------------
+   SMALL MOBILE
+------------------------------*/
+@media (max-width: 480px) {
+    .add-product {
+        padding: 18px;
+    }
+
+    .addproduct-thumbnail-img {
+        width: 120px;
+        height: 120px;
+    }
+}
