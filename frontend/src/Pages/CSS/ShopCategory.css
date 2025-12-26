@@ -1,0 +1,114 @@
+/* ✅ Banner */
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+    border-radius: 10px;
+}
+
+/* ✅ Main container for index + sort */
+.shopcategory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 82%;
+    margin: 20px auto 0 auto; /* Center align */
+}
+
+/* ✅ Bold text */
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+/* ✅ Sort By box */
+.shopcategory-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 18px;
+    font-weight: 600;
+    background: #f4f4f4;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.shopcategory-sort img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+/* ✅ Product grid */
+.shopcategory-products {
+    width: 82%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 30px;
+}
+
+/* ✅ Load more button */
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.shopcategory-loadmore:hover {
+    background: #dcdcdc;
+}
+
+.shop-category {
+  padding: 20px;
+}
+
+.shopcategory-banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.shopcategory-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.shopcategory-loadmore {
+  text-align: center;
+  margin: 40px auto;
+  padding: 10px 25px;
+  background-color: #f04e98;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shopcategory-loadmore:hover {
+  background-color: #c13c7c;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  grid-column: 1 / -1;
+}

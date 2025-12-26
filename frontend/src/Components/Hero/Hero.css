@@ -1,0 +1,301 @@
+/* src/Components/Hero/Hero.css */
+
+/* Google-font import (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
+
+:root{
+  --bg1: #fff6ff;
+  --bg2: #e9fff2;
+  --accent: #ff5160;
+  --muted: #6b6b6b;
+  --text: #0b0b0b;
+}
+
+*{ box-sizing: border-box; }
+.hero{
+  width:100%;
+  background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 100%);
+  padding: 48px 28px;
+  min-height: 70vh; 
+  padding-top: 100px;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.hero-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  display:flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left{
+  flex: 1 1 520px;
+  padding: 24px 20px;
+}
+
+.eyebrow{
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  margin: 0 0 12px 0;
+}
+
+.hero-top{
+  display:flex;
+  align-items:center;
+  gap: 18px;
+  margin-bottom: 6px;
+  transform: translateY(0);
+  animation: fadeUp .6s ease both;
+}
+
+.hero-kicker{
+  font-size: 48px;
+  margin: 0;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.hand{
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.08));
+}
+
+
+.hero-title{
+  font-size: 46px;
+  line-height: 1.02;
+  margin: 6px 0 18px 0;
+  font-weight: 800;
+  color: var(--text);
+  animation: fadeUp .7s ease both;
+}
+
+.hero-subline{
+  display:block;
+  font-weight:700;
+  font-size: 46px;
+  color: var(--text);
+}
+
+/* CTA */
+.hero-cta{
+  display:flex;
+  align-items:center;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.cta-btn{
+  display:inline-flex;
+  align-items:center;
+  gap: 12px;
+  background: linear-gradient(90deg, var(--accent), #ff7b88);
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(255,81,96,0.18);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.cta-btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(255,81,96,0.2);
+}
+
+.cta-arrow{
+  width:22px;
+  height:22px;
+  stroke: white;
+  opacity: .95;
+}
+
+/* small note beside CTA */
+.small-note{
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Right column figure */
+.hero-right{
+  flex: 0 0 380px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+  padding: 10px;
+}
+
+.hero-figure{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 28px;
+  overflow: visible;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-figure img{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(20,20,20,0.08);
+  transform: translateY(0);
+  animation: float 4s ease-in-out infinite;
+  background: white;
+  padding: 6px;
+}
+
+/* decorative accent behind image */
+.figure-accent{
+  position: absolute;
+  right: -18%;
+  top: 8%;
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,201,80,0.95), rgba(255,120,120,0.85));
+  filter: blur(12px);
+  z-index: -1;
+  transform: rotate(12deg);
+  opacity: .95;
+}
+
+.hero-title{
+  font-size: 64px;   /* increased from 46px */
+  line-height: 1.1;
+  margin: 6px 0 18px 0;
+  font-weight: 800;
+  color: var(--text);
+  animation: fadeUp .7s ease both;
+}
+
+.hero-subline{
+  display:block;
+  font-weight:700;
+  font-size: 64px;   /* increased from 46px */
+  color: var(--text);
+}
+
+/* Right column figure */
+.hero-right{
+  flex: 0 0 500px;   /* increased width for image column */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+  padding: 10px;
+}
+
+.hero-figure{
+  position: relative;
+  width: 340px;       /* increased from 260px */
+  height: 340px;      /* increased from 260px */
+  border-radius: 28px;
+  overflow: visible;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-figure img{
+  width: 300px;       /* increased from 220px */
+  height: 300px;      /* increased from 220px */
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(20,20,20,0.08);
+  transform: translateY(0);
+  animation: float 4s ease-in-out infinite;
+  background: white;
+  padding: 6px;
+}
+
+.hero-right{
+  flex: 0 0 560px;   /* more space for the image */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+  padding: 10px;
+}
+
+.hero-figure{
+  position: relative;
+  width: 400px;       /* was 340px */
+  height: 400px;      /* was 340px */
+  border-radius: 32px;
+  overflow: visible;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.hero-figure img{
+  width: 360px;       /* was 300px */
+  height: 360px;      /* was 300px */
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 24px 48px rgba(20,20,20,0.1);
+  transform: translateY(0);
+  animation: float 4s ease-in-out infinite;
+  background: white;
+  padding: 8px;
+}
+
+.figure-accent{
+  position: absolute;
+  right: -22%;
+  top: 4%;
+  width: 220px;        /* increased glow */
+  height: 220px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255,201,80,0.95), rgba(255,120,120,0.85));
+  filter: blur(16px);
+  z-index: -1;
+  transform: rotate(10deg);
+  opacity: .9;
+}
+
+
+/* Animations */
+@keyframes float{
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px) rotate(-1deg); }
+  100% { transform: translateY(0); }
+}
+@keyframes fadeUp{
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 920px){
+  .hero-inner{ flex-direction: column-reverse; gap: 28px; padding: 20px; }
+  .hero-right{ flex-basis: auto; }
+  .hero-left{ padding-left: 0; text-align: center; }
+  .hero-title, .hero-subline{ font-size: 34px; }
+  .hero-kicker{ font-size: 40px; }
+  .hero-figure{ width: 210px; height: 210px; }
+  .hero-figure img{ width: 180px; height: 180px; }
+}
+
+@media (max-width: 520px){
+  .hero-title, .hero-subline{ font-size: 28px; }
+  .hero-kicker{ font-size: 34px; }
+  .cta-btn{ padding: 12px 16px; font-size: 14px; }
+}
+
+
+

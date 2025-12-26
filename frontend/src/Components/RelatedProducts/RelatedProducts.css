@@ -1,0 +1,64 @@
+.related-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.related-products h1 {
+  color: #171717;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.related-products hr {
+  width: 150px;
+  height: 4px;
+  border: none;
+  border-radius: 10px;
+  background: #252525;
+}
+
+/* ✅ Fixed 3-column layout */
+.related-products-items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ Always 3 items per row */
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center; /* center align items */
+}
+
+/* Card hover animation */
+.related-products-items .item {
+  width: 350px; /* ✅ fixed card width for proper alignment */
+  transition: transform 0.3s ease;
+}
+
+.related-products-items .item:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive – 2 per row */
+@media (max-width: 992px) {
+  .related-products-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ 1 per row (mobile) */
+@media (max-width: 600px) {
+  .related-products-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .related-products-items .item {
+    width: 100%;
+    max-width: 350px;
+  }
+}

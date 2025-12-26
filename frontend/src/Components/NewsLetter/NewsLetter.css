@@ -1,0 +1,65 @@
+.newsletter-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+}
+
+.newsletter-box {
+  width: 85%;
+  max-width: 1300px;     /* Same width as hero section */
+  min-height: 380px;      /* Same height feel */
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  border-radius: 40px;    /* Same rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 50px;
+  gap: 25px;
+}
+
+.newsletter-box h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #454545;
+  text-align: center;
+}
+
+.newsletter-box p {
+  font-size: 20px;
+  color: #454545;
+  text-align: center;
+}
+
+.newsletter-input-box {
+  width: 70%;
+  max-width: 750px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 50px;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.newsletter-input-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+.newsletter-input-box button {
+  width: 180px;
+  height: 55px;
+  border-radius: 40px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
